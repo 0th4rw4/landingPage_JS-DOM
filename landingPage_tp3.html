@@ -1,0 +1,69 @@
+<!docytpe html>
+<html>
+	<head>
+		<title>Parcial JS - Tecnicas de DOM</title>
+		<link rel="stylesheet" media="screen" href="estilos.css" />
+		<meta charset="iso-8859-1" />
+	</head>
+	<body>
+	<div id="contenedor" class="float">
+		<h1>Parcial de APELLIDO, NOMBRE</h1>
+		<h2>Acerca de esta web</h2>
+		<div id="tabs">
+			<div>
+				<h3>Bienvenidos</h3>
+				<p>Este es un texto de bienvenida del HTML que representa al tercer Parcial de la materia Programación I, en la pauta que corresponde al manejo de DOM y BOM. <br />
+				En el mismo, se debe formatear el documento HTML sin alterar ninguna propiedad del mismo, desde el documento parcial_3.js que se entrega con este mismo archivo.<br />
+				Todas las modificaciones se deben realizar según lo enseñado durante la cursada con el manejo de Document Object Model y/o Browser Object Model.
+				</p>
+			</div>
+			<div>
+				<h3>Pautas del TP</h3>
+				<p>El documento ofrece tres areas a formatear, el primero corresponde a un div con id tabs, adentro del mismo se encuentra una colección de etiquetas DIV que representan distintas secciones.<br />
+				Los DIVS tienen un elemento h3 y un parrafo<br />
+				El alumno debe obtener los divs y crear un navegador de pestañas bajo el siguiente requerimiento:<br />
+				- Cada div dentro del div #tabs es una pestaña distinta.<br />
+				- El titulo de cada pestaña (la solapa clickeable) es el texto del h3.<br />
+				- El contenido de cada pestaña es lo que se encuentre dentro del parrafo.
+			</div>
+			<div>
+				<h3>Funcionamiento</h3>
+				<p>Al hacer click sobre una solapa, se debe mostrar el contenido del parrafo correspondiente al titulo clickeable.<br />
+				Para que el alumno no tenga dudas, son 3 pestañas: Bievenidos, Pautas del TP, Funcionamiento<br />
+				Debe tener presente la posibilidad de agregar más nodos [ DIV > h3 + p ].
+				</p>
+			</div>
+		</div>
+		<form id="suscripcion">
+			<h2>Suscribite al newsletter</h2>
+			Por favor, ingrese su dirección de mail y seleccione al menos dos newsletters que desee recibir en su correo.<br />
+			<input type="text" class="mail" name="email" /><br />
+			
+			<div>
+				<b>INFORMACION PARA EL ALUMNO</b>: La lista de gacetillas que puede seleccionar el usuario se encuentra en el Array 'newsletters'. De esa lista se debe generar un listado de checkboxes. Ese listado se debe mostrar REEMPLAZANDO ESTE TEXTO. Se deben elegir COMO MINIMO dos opciones de la lista de checkboxes, caso contrario deberá aparecer un mensaje de error notificando la cantidad de checkboxes necesarias.<br />
+				El mail NO HACE FALTA VALIDARLO, ni siquiera verificar si tiene contenido, si no se desea<br />
+				UNICAMENTE si la cantidad de checkboxes es correcta, se debe habilitar el boton de 'suscribirme', caso contario debe estar deshabilitado. (consejo: usar el evento click de los checkboxes para validar)
+			</div>
+			<button disabled="disabled">Suscribirme</button>
+		</form>
+		<div id="noticia">
+			<h2>Noticias</h2>
+			<div id="toolbar"><select><option>CAMBIAR FUENTE</option></select> | <a href="javascript:void(0)" id="color">COLOR</a> | <a href="javascript:void(0)" id="agrandarFuente">A+</a> | <a href="javascript:void(0)" id="achicarFuente">a-</a></div>
+			<p>Padre de familia (en inglés Family Guy) es una serie de televisión animada para adultos creada por Seth MacFarlane en 1999. La serie fue cancelada en 2000 y 2002 de nuevo por Fox (quienes fueron retirándola progresivamente de su parrilla de programación), pero debido a la demanda del público y el incremento de las ventas de los DVDs mas las reposiciones en Adult Swim la serie volvió en 2005 convenciendo a la cadena de que reemitieran la serie.</p>
+			<p>A continuacion se ofrece una galeria de imagenes, Haga click sobre una foto para ver la misma ampliada.<br />
+			<small>Nota: la ampliacion de la foto debe hacerse en un div que cubra toda la pantalla, con la imagen centrada y al hacer click sobre la imagen ampliada, el div debe eliminarse.</small></p>
+			<div id="galeria">
+				<img src="imagen/padre_familia1.jpg" width="100" alt="foto 1" />
+				<img src="imagen/padre_familia2.jpg" width="100" alt="foto 2" />
+				<img src="imagen/padre_familia3.jpg" width="100" alt="foto 3" />
+				<img src="imagen/padre_familia4.jpg" width="100" alt="foto 4" />
+				<img src="imagen/padre_familia5.jpg" width="100" alt="foto 5" />
+				<img src="imagen/padre_familia6.jpg" width="100" alt="foto 6" />
+				<img src="imagen/padre_familia7.jpg" width="100" alt="foto 7" />
+				<img src="imagen/padre_familia8.jpg" width="100" alt="foto 8" />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="memorandum.js"></script>
+	</body>
+</html>
