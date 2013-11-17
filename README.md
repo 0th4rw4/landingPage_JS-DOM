@@ -6,7 +6,7 @@ ToDo
 ====
 Cargar archivo PDF en este MarkDown
 
-Devolucio y ToDo
+Devolucion y ToDo
 ================
 h1 mal el texto
 checkboxes agregados despues del boton
