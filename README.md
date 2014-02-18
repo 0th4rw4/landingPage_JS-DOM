@@ -14,3 +14,5 @@ sin cambio fuente
 La tipografia se agranda hasta 18 y achica hasta 8
 el texto del h1 no se cambia con innerHTML, sino creando un nodo de texto
 la fuente la podías cambiar con el valor de la selección
+
+http://la-nave.com.ar/portf/landingPage_JS-DOM/landingPage_tp3.html
